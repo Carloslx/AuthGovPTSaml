@@ -17,7 +17,7 @@ namespace AuthGovPTSaml.Core.SAML
     }
 
     public class SamlBodyRequest : BaseRequest
-    {        
+    {
         public string SAMLRequest { get; set; }
         public string PostRequestUrl { get; set; }
     }
@@ -26,7 +26,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         public string SAMLResponse { get; set; }
 
-        public Dictionary<string,string> IdentityAttributes { get; set; }
+        public Dictionary<string, string> IdentityAttributes { get; set; }
 
         public SamlResponseAction Action { get; set; }
 

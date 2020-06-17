@@ -22,21 +22,21 @@ namespace AuthGovPTSaml.Core.SAML.Services
     {
         #region private prop
         private static readonly XmlSerializerNamespaces xmlNamespaces = new XmlSerializerNamespaces();
-        private static readonly NameValueCollection appSettings       = ConfigurationManager.AppSettings;
-        private readonly bool EnableResponseSchemaValidation          = true;
+        private static readonly NameValueCollection appSettings = ConfigurationManager.AppSettings;
+        private readonly bool EnableResponseSchemaValidation = true;
         private string SchemaFilesFolderPath { get; set; }
         private string RelayStateToBepersistedAcross { get; set; }
         private SamlBodyRequest SamlBodyRequest { get; set; }
         public X509Certificate2 FaX509Certificate { get; set; }
         private bool EnableAuthWithCMD { get; set; }
         private int TokenTimeValueConfig = 30;
-        
+
         //TODO:: define logger service
         #endregion
 
         #region ctors
         public SamlAuthService(bool enableSchemaValidation = true)
-        {            
+        {
             //load schemafiles from web.config
             var schemasFilesBasePath = HostingEnvironment.MapPath(appSettings.Get("AuthGovPT.Saml.Schemas.Files.Path"));
 
@@ -59,12 +59,12 @@ namespace AuthGovPTSaml.Core.SAML.Services
             SchemaFilesFolderPath = schemasFilesPath;
             EnableResponseSchemaValidation = enableSchemaValidation;
         }
-        
+
         public SamlAuthService(string relayState, bool enableAuthWithCMD = true, bool enableServerMapPathForCert = false, bool enableSchemaValidation = true)
         {
-            SamlBodyRequest               = new SamlBodyRequest();
+            SamlBodyRequest = new SamlBodyRequest();
             RelayStateToBepersistedAcross = relayState;
-            EnableAuthWithCMD             = enableAuthWithCMD;
+            EnableAuthWithCMD = enableAuthWithCMD;
             // Get certificate, is a requirement
             try
             {
@@ -77,7 +77,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
 
             }
             catch (Exception ex)
-            {                
+            {
                 //TODO: log exception ex
                 throw new ConfigurationErrorsException("Unable to set X509 Certificate. Please check your configurations");
             }

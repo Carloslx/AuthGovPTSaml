@@ -30,7 +30,7 @@ namespace PortalDaCultura.AuthGov.Core.Helpers
         public StringCipher()
         {
             var samlService = new SamlAuthService(string.Empty, false, true);
-            CustomKey       = samlService.FaX509Certificate.Thumbprint.ToString();
+            CustomKey = samlService.FaX509Certificate.Thumbprint.ToString();
         }
 
         #region public methods

@@ -18,7 +18,7 @@ namespace AuthGovPTSaml.Core.Helpers
         /// </summary>
         /// <param name="requestedAttr">Dic of CC atributes with the flag of ISRequired field to request</param>
         /// <returns>XmlElement to be used on the SAML request</returns>
-        public static XmlElement[] RegisterCCAtributes(Dictionary<CCAtributes,bool> requestedAttr, bool enableAuthWithCMD=true)
+        public static XmlElement[] RegisterCCAtributes(Dictionary<CCAtributes, bool> requestedAttr, bool enableAuthWithCMD = true)
         {
             XmlDocument docAux = new XmlDocument
             {
@@ -32,7 +32,7 @@ namespace AuthGovPTSaml.Core.Helpers
             {
                 requestedAttributes.AppendChild(BuildRequestedAttribute(docAux, $"http://interop.gov.pt/MDC/Cidadao/{ccAttr.Key}", ccAttr.Value));
             }
-            
+
             return enableAuthWithCMD ? new XmlElement[] { requestedAttributes, AddChaveMovelOptionForAuth(docAux) } : new XmlElement[] { requestedAttributes };
         }
 
@@ -52,7 +52,7 @@ namespace AuthGovPTSaml.Core.Helpers
         /// <param name="doc">the saml xml document request</param>
         /// <returns>return the XmlElment attr with the option for chave movel digital</returns>
         private static XmlElement AddChaveMovelOptionForAuth(XmlDocument doc)
-        {            
+        {
             XmlElement cmdAttr = doc.CreateElement("fa", "FAAALevel", "http://autenticacao.cartaodecidadao.pt/atributos");
             cmdAttr.InnerText = "2";
             return cmdAttr;

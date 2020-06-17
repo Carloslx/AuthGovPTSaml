@@ -17,7 +17,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
     /// 2018 @ Chaves and Ama.pt
     /// </summary>
     /// <seealso cref="SamlAuthService"/>
-    public partial class SamlAuthService 
+    public partial class SamlAuthService
     {
         #region Public Request process methods
         public SamlBodyRequest GetSamlRequest(Dictionary<CCAtributes, bool> CCRequestAttrs)
@@ -47,7 +47,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
             // protocol bindings. If it is present, the actual recipient MUST check that the URI reference identifies the
             // location at which the message was received. If it does not, the request MUST be discarded. Some
             // protocol bindings may require the use of this attribute (see [SAMLBind]).
-            _request.Destination = appSettings.Get("AuthGovPT.Saml.Request.Destination.Url");            
+            _request.Destination = appSettings.Get("AuthGovPT.Saml.Request.Destination.Url");
 
             // saml-core-2.0-os - 3.2.1 
             // Indicates whether or not (and under what conditions) consent has been obtained from a principal in
@@ -85,7 +85,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
             _request.Issuer = new NameIDType();
 
             _request.Issuer.Value = appSettings.Get("AuthGovPT.Saml.Request.Issuer.Value");
-            
+
 
             // saml-core-2.0-os - 3.2.1
             // This extension point contains optional protocol message extension elements that are agreed on
@@ -178,7 +178,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
                 element.InsertAfter(xmlDigitalSignature, refNode);
             }
             catch (Exception ex)
-            {                
+            {
                 //TODO:: log exception ex
                 SamlBodyRequest.Success = false;
                 SamlBodyRequest.ErrorMessage = $"Error on Xml signing process. EX: {ex.ToString()}";
@@ -202,7 +202,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
             // transmission..."            
             // Vide 3.5 "HTTP POST Binding" em 
             // http://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf
-            
+
             #endregion
         }
 

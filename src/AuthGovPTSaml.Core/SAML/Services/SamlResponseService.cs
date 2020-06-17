@@ -23,17 +23,17 @@ namespace AuthGovPTSaml.Core.SAML.Services
         #region Public Response Process Methods
         public SamlBodyResponse ProcessSamlResponse(SamlBodyResponse samlBodyRes)
         {
-            var result = new SamlBodyResponse() { Success = true, AuthToken= string.Empty };
+            var result = new SamlBodyResponse() { Success = true, AuthToken = string.Empty };
 
             if (string.IsNullOrEmpty(samlBodyRes.SAMLResponse))
-            {                
+            {
                 return AddResponseError(samlBodyRes, "Recebido pedido de autenticação inválido (SAMLResponse vazio)");
             }
 
             #region XmlLoad
 
             byte[] reqDataB64 = Convert.FromBase64String(samlBodyRes.SAMLResponse);
-            string reqData    = Encoding.UTF8.GetString(reqDataB64);
+            string reqData = Encoding.UTF8.GetString(reqDataB64);
 
             XmlDocument xml = new XmlDocument
             {
@@ -45,31 +45,31 @@ namespace AuthGovPTSaml.Core.SAML.Services
                 xml.LoadXml(reqData);
             }
             catch (XmlException ex)
-            {                
+            {
                 return AddResponseError(samlBodyRes, "Excepção ao carregar xml: " + ex.ToString());
             }
             #endregion
-           
+
             #region Xml signature validation
 
             string certificateB64 = xml.GetElementsByTagName("X509Certificate", "http://www.w3.org/2000/09/xmldsig#").Item(0).InnerText;
             X509Certificate2 certificate = new X509Certificate2(Convert.FromBase64String(certificateB64));
 
             var chain = new X509Chain();
-            chain.ChainPolicy.RevocationFlag    = X509RevocationFlag.ExcludeRoot;
-            chain.ChainPolicy.RevocationMode    = X509RevocationMode.NoCheck;
+            chain.ChainPolicy.RevocationFlag = X509RevocationFlag.ExcludeRoot;
+            chain.ChainPolicy.RevocationMode = X509RevocationMode.NoCheck;
             chain.ChainPolicy.VerificationFlags = X509VerificationFlags.NoFlag;
-            
+
             // sets the timeout for retrieving the certificate validation
             chain.ChainPolicy.UrlRetrievalTimeout = new TimeSpan(0, 1, 0);
 
             if (!chain.Build(certificate))
-            {                                
+            {
                 return AddResponseError(samlBodyRes, "Assinatura tem certificado inválido");
             }
 
             if (!xml.PreserveWhitespace)
-            {                                
+            {
                 return AddResponseError(samlBodyRes, "SAMLRequest não preserva espaços em branco");
             }
 
@@ -77,14 +77,14 @@ namespace AuthGovPTSaml.Core.SAML.Services
             XmlNodeList nodeList = xml.GetElementsByTagName("Signature", "http://www.w3.org/2000/09/xmldsig#");
 
             if (nodeList.Count == 0)
-            {                
+            {
                 return AddResponseError(samlBodyRes, "SAMLRequest não está assinado.");
             }
 
             signedXmlForValidation.LoadXml((XmlElement)nodeList[0]);
 
             if (!signedXmlForValidation.CheckSignature())
-            {                
+            {
                 return AddResponseError(samlBodyRes, "Formato de mensagem desconhecido: " + xml.DocumentElement.LocalName);
             }
             #endregion
@@ -106,21 +106,21 @@ namespace AuthGovPTSaml.Core.SAML.Services
             switch (xml.DocumentElement.LocalName.ToUpper())
             {
                 case "RESPONSE":
-                       return ProcessResponse(samlBodyRes, xml, reader);
-                    
+                    return ProcessResponse(samlBodyRes, xml, reader);
+
                 case "LOGOUTRESPONSE":
-                        return ProcessLogoutResponse(samlBodyRes, xml, reader);
-                    
+                    return ProcessLogoutResponse(samlBodyRes, xml, reader);
+
                 default:
                     // tipo de resposta desconhecido ou não processável...                       
                     return AddResponseError(samlBodyRes, "Formato de mensagem desconhecido: " + xml.DocumentElement.LocalName);
             }
             #endregion
-            
+
         }
 
         public SamlBodyResponse ValidateSchema(XmlDocument xml, SamlBodyResponse crrRes)
-        {            
+        {
             try
             {
                 XmlSchemaSet schemaSet = new XmlSchemaSet();
@@ -134,14 +134,14 @@ namespace AuthGovPTSaml.Core.SAML.Services
                 // Sets the Xml validator event handler (if it's fired then the schema has error)
                 ValidationEventHandler validator = delegate (object obj, ValidationEventArgs args)
             {
-                throw new Exception("Erro na validação das schemas: " + args.Message);                                
+                throw new Exception("Erro na validação das schemas: " + args.Message);
             };
 
                 xml.Validate(validator);
             }
             catch (Exception ex)
             {
-                return AddResponseError(crrRes, "Erro na validação das schemas: " + ex.Message);                
+                return AddResponseError(crrRes, "Erro na validação das schemas: " + ex.Message);
             }
 
             crrRes.Success = true;
@@ -150,7 +150,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
         #endregion
 
         #region Private Methods
-    
+
         private SamlBodyResponse ProcessResponse(SamlBodyResponse samlBodyRes, XmlDocument xml, XmlReader reader)
         {
             // desserializar xml para ResponseType
@@ -160,7 +160,7 @@ namespace AuthGovPTSaml.Core.SAML.Services
             // verificar validade temporal:
             int validTimeFrame = 5;
             if (Math.Abs(response.IssueInstant.Subtract(DateTime.UtcNow).TotalMinutes) > validTimeFrame)
-            {                
+            {
                 return AddResponseError(samlBodyRes, "SAML Response fora do intervalo de validade - validade da resposta: " + response.IssueInstant);
             }
 
@@ -215,13 +215,13 @@ namespace AuthGovPTSaml.Core.SAML.Services
                                 {
                                     foreach (var itemAttr in attr.AttributeValue)
                                     {
-                                       samlBodyRes.IdentityAttributes.Add((string)attr.Name, (string)attr.AttributeValue[0]);
+                                        samlBodyRes.IdentityAttributes.Add((string)attr.Name, (string)attr.AttributeValue[0]);
                                     }
-                                }                                                                    
+                                }
                             }
                         }
                     }
-                }             
+                }
             }
             else
             {
@@ -253,19 +253,19 @@ namespace AuthGovPTSaml.Core.SAML.Services
             // verificar validade temporal:
             int validTimeFrame = 5;
             if (Math.Abs(response.IssueInstant.Subtract(DateTime.UtcNow).TotalMinutes) > validTimeFrame)
-            {                
+            {
                 return AddResponseError(samlBodyRes, "SAML Response fora do intervalo de validade - validade da resposta: " + response.IssueInstant);
             }
 
             if ("urn:oasis:names:tc:SAML:2.0:status:Success".CompareTo(response.Status.StatusCode.Value) != 0)
-            {                                
+            {
                 return AddResponseError(samlBodyRes, "Autenticação sem sucesso: " + response.Status.StatusCode.Value + " - " + response.Status.StatusMessage);
             }
 
             samlBodyRes.Success = true;
             samlBodyRes.Action = Enums.SamlResponseAction.Logout;
             return samlBodyRes;
-                        
+
         }
         private SamlBodyResponse AddResponseError(SamlBodyResponse crrRes, string msg)
         {

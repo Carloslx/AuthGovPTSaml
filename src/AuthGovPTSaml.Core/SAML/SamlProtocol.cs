@@ -19,7 +19,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
 
         private System.Xml.XmlElement[] anyField;
-        
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any
         {
@@ -106,7 +106,7 @@ namespace AuthGovPTSaml.Core.SAML
             set { anyElementField = value; }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string[] Text
         {
@@ -121,7 +121,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -131,7 +131,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -150,7 +150,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string algorithmField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("KA-Nonce", DataType = "base64Binary")]
         public byte[] KANonce
         {
@@ -164,7 +164,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlNode[] Any
@@ -179,7 +179,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public KeyInfoType OriginatorKeyInfo
         {
             get
@@ -192,7 +192,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public KeyInfoType RecipientKeyInfo
         {
             get
@@ -205,7 +205,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Algorithm
         {
@@ -220,7 +220,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -237,7 +237,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         [System.Xml.Serialization.XmlElementAttribute("KeyName", typeof(string))]
         [System.Xml.Serialization.XmlElementAttribute("KeyValue", typeof(KeyValueType))]
@@ -259,7 +259,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType2[] ItemsElementName
@@ -274,7 +274,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string[] Text
         {
@@ -288,7 +288,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -303,7 +303,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -316,7 +316,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string[] textField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         [System.Xml.Serialization.XmlElementAttribute("DSAKeyValue", typeof(DSAKeyValueType))]
         [System.Xml.Serialization.XmlElementAttribute("RSAKeyValue", typeof(RSAKeyValueType))]
@@ -332,7 +332,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string[] Text
         {
@@ -347,7 +347,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -370,7 +370,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private byte[] pgenCounterField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] P
         {
@@ -384,7 +384,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Q
         {
@@ -398,7 +398,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] G
         {
@@ -412,7 +412,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Y
         {
@@ -426,7 +426,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] J
         {
@@ -440,7 +440,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Seed
         {
@@ -454,7 +454,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] PgenCounter
         {
@@ -469,7 +469,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -482,7 +482,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private byte[] exponentField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Modulus
         {
@@ -496,7 +496,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Exponent
         {
@@ -511,7 +511,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -524,7 +524,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private ItemsChoiceType1[] itemsElementNameField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         [System.Xml.Serialization.XmlElementAttribute("PGPKeyID", typeof(byte[]), DataType = "base64Binary")]
         [System.Xml.Serialization.XmlElementAttribute("PGPKeyPacket", typeof(byte[]), DataType = "base64Binary")]
@@ -541,7 +541,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType1[] ItemsElementName
@@ -557,24 +557,24 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#", IncludeInSchema = false)]
     public enum ItemsChoiceType1
     {
-     
+
         [System.Xml.Serialization.XmlEnumAttribute("##any:")]
         Item,
 
-     
+
         PGPKeyID,
 
-     
+
         PGPKeyPacket,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -589,7 +589,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string typeField;
 
-     
+
         [System.Xml.Serialization.XmlArrayItemAttribute("Transform", IsNullable = false)]
         public TransformType[] Transforms
         {
@@ -603,7 +603,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string URI
         {
@@ -617,7 +617,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Type
         {
@@ -632,7 +632,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -647,7 +647,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string algorithmField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         [System.Xml.Serialization.XmlElementAttribute("XPath", typeof(string))]
         public object[] Items
@@ -662,7 +662,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string[] Text
         {
@@ -676,7 +676,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Algorithm
         {
@@ -691,7 +691,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -704,7 +704,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private System.Xml.XmlElement anyField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("SPKISexp", DataType = "base64Binary")]
         public byte[][] SPKISexp
         {
@@ -718,7 +718,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement Any
         {
@@ -733,7 +733,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -746,7 +746,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private ItemsChoiceType[] itemsElementNameField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         [System.Xml.Serialization.XmlElementAttribute("X509CRL", typeof(byte[]), DataType = "base64Binary")]
         [System.Xml.Serialization.XmlElementAttribute("X509Certificate", typeof(byte[]), DataType = "base64Binary")]
@@ -766,7 +766,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType[] ItemsElementName
@@ -782,7 +782,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -794,7 +794,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string x509SerialNumberField;
 
-     
+
         public string X509IssuerName
         {
             get
@@ -807,7 +807,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
         public string X509SerialNumber
         {
@@ -822,65 +822,65 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#", IncludeInSchema = false)]
     public enum ItemsChoiceType
     {
-     
+
         [System.Xml.Serialization.XmlEnumAttribute("##any:")]
         Item,
 
-     
+
         X509CRL,
 
-     
+
         X509Certificate,
 
-     
+
         X509IssuerSerial,
 
-     
+
         X509SKI,
 
-     
+
         X509SubjectName,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#", IncludeInSchema = false)]
     public enum ItemsChoiceType2
     {
-     
+
         [System.Xml.Serialization.XmlEnumAttribute("##any:")]
         Item,
 
-     
+
         KeyName,
 
-     
+
         KeyValue,
 
-     
+
         MgmtData,
 
-     
+
         PGPData,
 
-     
+
         RetrievalMethod,
 
-     
+
         SPKIData,
 
-     
+
         X509Data,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -897,7 +897,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Items
         {
@@ -911,7 +911,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string[] Text
         {
@@ -925,7 +925,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Target
         {
@@ -939,7 +939,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -954,7 +954,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -967,7 +967,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("SignatureProperty")]
         public SignaturePropertyType[] SignatureProperty
         {
@@ -981,7 +981,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -996,7 +996,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1009,7 +1009,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Reference")]
         public ReferenceType[] Reference
         {
@@ -1023,7 +1023,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -1038,7 +1038,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1059,7 +1059,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string typeField;
 
-     
+
         [System.Xml.Serialization.XmlArrayItemAttribute("Transform", IsNullable = false)]
         public TransformType[] Transforms
         {
@@ -1073,7 +1073,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public DigestMethodType DigestMethod
         {
             get
@@ -1086,7 +1086,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] DigestValue
         {
@@ -1100,7 +1100,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -1114,7 +1114,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string URI
         {
@@ -1128,7 +1128,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Type
         {
@@ -1143,7 +1143,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1156,7 +1156,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string algorithmField;
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlNode[] Any
@@ -1171,7 +1171,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Algorithm
         {
@@ -1186,7 +1186,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1205,7 +1205,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private System.Xml.XmlAttribute[] anyAttrField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("AttributeValue", IsNullable = true)]
         public object[] AttributeValue
         {
@@ -1219,7 +1219,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
         {
@@ -1233,7 +1233,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string NameFormat
         {
@@ -1247,7 +1247,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string FriendlyName
         {
@@ -1261,7 +1261,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAnyAttributeAttribute()]
         public System.Xml.XmlAttribute[] AnyAttr
         {
@@ -1276,7 +1276,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1289,7 +1289,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private ItemsChoiceType6[] itemsElementNameField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Assertion", typeof(AssertionType))]
         [System.Xml.Serialization.XmlElementAttribute("AssertionIDRef", typeof(string), DataType = "NCName")]
         [System.Xml.Serialization.XmlElementAttribute("AssertionURIRef", typeof(string), DataType = "anyURI")]
@@ -1307,7 +1307,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType6[] ItemsElementName
@@ -1323,7 +1323,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1350,7 +1350,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private System.DateTime issueInstantField;
 
-     
+
         public NameIDType Issuer
         {
             get
@@ -1363,7 +1363,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
         public SignatureType Signature
         {
@@ -1377,7 +1377,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public SubjectType Subject
         {
             get
@@ -1390,7 +1390,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public ConditionsType Conditions
         {
             get
@@ -1403,7 +1403,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public AdviceType Advice
         {
             get
@@ -1416,7 +1416,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("AttributeStatement", typeof(AttributeStatementType))]
         [System.Xml.Serialization.XmlElementAttribute("AuthnStatement", typeof(AuthnStatementType))]
         [System.Xml.Serialization.XmlElementAttribute("AuthzDecisionStatement", typeof(AuthzDecisionStatementType))]
@@ -1433,7 +1433,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Version
         {
@@ -1447,7 +1447,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string ID
         {
@@ -1461,7 +1461,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime IssueInstant
         {
@@ -1476,7 +1476,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1495,7 +1495,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string valueField;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string NameQualifier
         {
@@ -1509,7 +1509,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string SPNameQualifier
         {
@@ -1523,7 +1523,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Format
         {
@@ -1537,7 +1537,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string SPProvidedID
         {
@@ -1551,7 +1551,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string Value
         {
@@ -1566,7 +1566,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1585,7 +1585,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         public SignedInfoType SignedInfo
         {
             get
@@ -1598,7 +1598,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public SignatureValueType SignatureValue
         {
             get
@@ -1611,7 +1611,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public KeyInfoType KeyInfo
         {
             get
@@ -1624,7 +1624,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Object")]
         public ObjectType[] Object
         {
@@ -1638,7 +1638,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -1653,7 +1653,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1670,7 +1670,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         public CanonicalizationMethodType CanonicalizationMethod
         {
             get
@@ -1683,7 +1683,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public SignatureMethodType SignatureMethod
         {
             get
@@ -1696,7 +1696,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Reference")]
         public ReferenceType[] Reference
         {
@@ -1710,7 +1710,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -1725,7 +1725,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1738,7 +1738,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string algorithmField;
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlNode[] Any
@@ -1753,7 +1753,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Algorithm
         {
@@ -1768,7 +1768,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1783,7 +1783,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string algorithmField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
         public string HMACOutputLength
         {
@@ -1797,7 +1797,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlNode[] Any
@@ -1812,7 +1812,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Algorithm
         {
@@ -1827,7 +1827,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1840,7 +1840,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private byte[] valueField;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -1854,7 +1854,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute(DataType = "base64Binary")]
         public byte[] Value
         {
@@ -1869,7 +1869,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1886,7 +1886,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string encodingField;
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlNode[] Any
@@ -1901,7 +1901,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -1915,7 +1915,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string MimeType
         {
@@ -1929,7 +1929,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Encoding
         {
@@ -1944,7 +1944,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1955,7 +1955,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private object[] itemsField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("BaseID", typeof(BaseIDAbstractType))]
         [System.Xml.Serialization.XmlElementAttribute("EncryptedID", typeof(EncryptedElementType))]
         [System.Xml.Serialization.XmlElementAttribute("NameID", typeof(NameIDType))]
@@ -1973,7 +1973,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1986,7 +1986,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string sPNameQualifierField;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string NameQualifier
         {
@@ -2000,7 +2000,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string SPNameQualifier
         {
@@ -2015,7 +2015,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2028,7 +2028,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private EncryptedKeyType[] encryptedKeyField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2001/04/xmlenc#")]
         public EncryptedDataType EncryptedData
         {
@@ -2042,7 +2042,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("EncryptedKey", Namespace = "http://www.w3.org/2001/04/xmlenc#")]
         public EncryptedKeyType[] EncryptedKey
         {
@@ -2057,7 +2057,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2068,7 +2068,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
     }
 
- 
+
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(EncryptedKeyType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(EncryptedDataType))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
@@ -2094,7 +2094,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string encodingField;
 
-     
+
         public EncryptionMethodType EncryptionMethod
         {
             get
@@ -2107,7 +2107,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
         public KeyInfoType KeyInfo
         {
@@ -2121,7 +2121,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public CipherDataType CipherData
         {
             get
@@ -2134,7 +2134,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public EncryptionPropertiesType EncryptionProperties
         {
             get
@@ -2147,7 +2147,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -2161,7 +2161,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Type
         {
@@ -2175,7 +2175,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string MimeType
         {
@@ -2189,7 +2189,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Encoding
         {
@@ -2204,7 +2204,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2220,7 +2220,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string algorithmField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
         public string KeySize
         {
@@ -2234,7 +2234,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] OAEPparams
         {
@@ -2248,7 +2248,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlNode[] Any
@@ -2263,7 +2263,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Algorithm
         {
@@ -2278,7 +2278,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2289,7 +2289,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private object itemField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("CipherReference", typeof(CipherReferenceType))]
         [System.Xml.Serialization.XmlElementAttribute("CipherValue", typeof(byte[]), DataType = "base64Binary")]
         public object Item
@@ -2305,7 +2305,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2318,7 +2318,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string uRIField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Transforms")]
         public TransformsType1 Item
         {
@@ -2332,7 +2332,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string URI
         {
@@ -2347,7 +2347,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2357,7 +2357,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private TransformType[] transformField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Transform", Namespace = "http://www.w3.org/2000/09/xmldsig#")]
         public TransformType[] Transform
         {
@@ -2372,7 +2372,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2385,7 +2385,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string idField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("EncryptionProperty")]
         public EncryptionPropertyType[] EncryptionProperty
         {
@@ -2399,7 +2399,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -2414,7 +2414,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2433,7 +2433,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private System.Xml.XmlAttribute[] anyAttrField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Items
         {
@@ -2447,7 +2447,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string[] Text
         {
@@ -2461,7 +2461,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Target
         {
@@ -2475,7 +2475,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string Id
         {
@@ -2489,7 +2489,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAnyAttributeAttribute()]
         public System.Xml.XmlAttribute[] AnyAttr
         {
@@ -2504,7 +2504,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2519,7 +2519,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string recipientField;
 
-     
+
         public ReferenceList ReferenceList
         {
             get
@@ -2532,7 +2532,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public string CarriedKeyName
         {
             get
@@ -2545,7 +2545,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Recipient
         {
@@ -2560,7 +2560,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2573,7 +2573,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private ItemsChoiceType3[] itemsElementNameField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("DataReference", typeof(ReferenceType1))]
         [System.Xml.Serialization.XmlElementAttribute("KeyReference", typeof(ReferenceType1))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
@@ -2589,7 +2589,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType3[] ItemsElementName
@@ -2605,7 +2605,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2617,7 +2617,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string uRIField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any
         {
@@ -2631,7 +2631,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string URI
         {
@@ -2646,20 +2646,20 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2001/04/xmlenc#", IncludeInSchema = false)]
     public enum ItemsChoiceType3
     {
-     
+
         DataReference,
 
-     
+
         KeyReference,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2674,7 +2674,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string methodField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("BaseID", typeof(BaseIDAbstractType))]
         [System.Xml.Serialization.XmlElementAttribute("EncryptedID", typeof(EncryptedElementType))]
         [System.Xml.Serialization.XmlElementAttribute("NameID", typeof(NameIDType))]
@@ -2690,7 +2690,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public SubjectConfirmationDataType SubjectConfirmationData
         {
             get
@@ -2703,7 +2703,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Method
         {
@@ -2835,7 +2835,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2846,7 +2846,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private string[] audienceField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Audience", DataType = "anyURI")]
         public string[] Audience
         {
@@ -2861,7 +2861,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ProxyRestrictionType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OneTimeUseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AudienceRestrictionType))]
@@ -2875,7 +2875,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2888,7 +2888,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string countField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Audience", DataType = "anyURI")]
         public string[] Audience
         {
@@ -2902,7 +2902,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string Count
         {
@@ -2917,7 +2917,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2928,7 +2928,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2941,7 +2941,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private ItemsChoiceType4[] itemsElementNameField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         [System.Xml.Serialization.XmlElementAttribute("Assertion", typeof(AssertionType))]
         [System.Xml.Serialization.XmlElementAttribute("AssertionIDRef", typeof(string), DataType = "NCName")]
@@ -2960,7 +2960,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType4[] ItemsElementName
@@ -2976,30 +2976,30 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion", IncludeInSchema = false)]
     public enum ItemsChoiceType4
     {
-     
+
         [System.Xml.Serialization.XmlEnumAttribute("##any:")]
         Item,
 
-     
+
         Assertion,
 
-     
+
         AssertionIDRef,
 
-     
+
         AssertionURIRef,
 
-     
+
         EncryptedAssertion,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3010,7 +3010,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private object[] itemsField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Attribute", typeof(AttributeType))]
         [System.Xml.Serialization.XmlElementAttribute("EncryptedAttribute", typeof(EncryptedElementType))]
         public object[] Items
@@ -3026,7 +3026,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeStatementType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthzDecisionStatementType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthnStatementType))]
@@ -3040,7 +3040,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3057,7 +3057,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private DecisionType decisionField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Action")]
         public ActionType[] Action
         {
@@ -3071,7 +3071,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public EvidenceType Evidence
         {
             get
@@ -3084,7 +3084,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Resource
         {
@@ -3098,7 +3098,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public DecisionType Decision
         {
@@ -3113,7 +3113,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3126,7 +3126,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string valueField;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Namespace
         {
@@ -3140,7 +3140,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlTextAttribute()]
         public string Value
         {
@@ -3155,23 +3155,23 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
     public enum DecisionType
     {
-     
+
         Permit,
 
-     
+
         Deny,
 
-     
+
         Indeterminate,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3192,7 +3192,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private bool sessionNotOnOrAfterFieldSpecified;
 
-     
+
         public SubjectLocalityType SubjectLocality
         {
             get
@@ -3205,7 +3205,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public AuthnContextType AuthnContext
         {
             get
@@ -3218,7 +3218,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime AuthnInstant
         {
@@ -3232,7 +3232,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string SessionIndex
         {
@@ -3246,7 +3246,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime SessionNotOnOrAfter
         {
@@ -3260,7 +3260,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SessionNotOnOrAfterSpecified
         {
@@ -3275,7 +3275,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3288,7 +3288,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string dNSNameField;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Address
         {
@@ -3302,7 +3302,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string DNSName
         {
@@ -3317,7 +3317,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3332,7 +3332,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string[] authenticatingAuthorityField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("AuthnContextClassRef", typeof(string), DataType = "anyURI")]
         [System.Xml.Serialization.XmlElementAttribute("AuthnContextDecl", typeof(object))]
         [System.Xml.Serialization.XmlElementAttribute("AuthnContextDeclRef", typeof(string), DataType = "anyURI")]
@@ -3349,7 +3349,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType5[] ItemsElementName
@@ -3364,7 +3364,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("AuthenticatingAuthority", DataType = "anyURI")]
         public string[] AuthenticatingAuthority
         {
@@ -3379,42 +3379,42 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion", IncludeInSchema = false)]
     public enum ItemsChoiceType5
     {
-     
+
         AuthnContextClassRef,
 
-     
+
         AuthnContextDecl,
 
-     
+
         AuthnContextDeclRef,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion", IncludeInSchema = false)]
     public enum ItemsChoiceType6
     {
-     
+
         Assertion,
 
-     
+
         AssertionIDRef,
 
-     
+
         AssertionURIRef,
 
-     
+
         EncryptedAssertion,
     }
 
- 
+
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(NameIDMappingRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(LogoutRequestType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManageNameIDRequestType))]
@@ -3448,7 +3448,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string consentField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public NameIDType Issuer
         {
@@ -3462,7 +3462,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
         public SignatureType Signature
         {
@@ -3476,7 +3476,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public ExtensionsType Extensions
         {
             get
@@ -3489,7 +3489,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string ID
         {
@@ -3503,7 +3503,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Version
         {
@@ -3517,7 +3517,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime IssueInstant
         {
@@ -3531,7 +3531,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Destination
         {
@@ -3545,7 +3545,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Consent
         {
@@ -3560,7 +3560,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3576,7 +3576,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private StatusDetailType statusDetailField;
 
-     
+
         public StatusCodeType StatusCode
         {
             get
@@ -3589,7 +3589,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public string StatusMessage
         {
             get
@@ -3602,7 +3602,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public StatusDetailType StatusDetail
         {
             get
@@ -3616,7 +3616,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3630,7 +3630,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string valueField;
 
-     
+
         public StatusCodeType StatusCode
         {
             get
@@ -3643,7 +3643,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Value
         {
@@ -3658,7 +3658,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3669,7 +3669,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private System.Xml.XmlElement[] anyField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any
         {
@@ -3684,7 +3684,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3695,7 +3695,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private string[] assertionIDRefField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("AssertionIDRef", Namespace = "urn:oasis:names:tc:SAML:2.0:assertion", DataType = "NCName")]
         public string[] AssertionIDRef
         {
@@ -3710,7 +3710,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthzDecisionQueryType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeQueryType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AuthnQueryType))]
@@ -3724,7 +3724,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private SubjectType subjectField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public SubjectType Subject
         {
@@ -3739,7 +3739,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3752,7 +3752,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string sessionIndexField;
 
-     
+
         public RequestedAuthnContextType RequestedAuthnContext
         {
             get
@@ -3765,7 +3765,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string SessionIndex
         {
@@ -3780,7 +3780,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3797,7 +3797,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private bool comparisonFieldSpecified;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("AuthnContextClassRef", typeof(string), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion", DataType = "anyURI")]
         [System.Xml.Serialization.XmlElementAttribute("AuthnContextDeclRef", typeof(string), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion", DataType = "anyURI")]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
@@ -3813,7 +3813,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType7[] ItemsElementName
@@ -3828,7 +3828,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public AuthnContextComparisonType Comparison
         {
@@ -3842,7 +3842,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ComparisonSpecified
         {
@@ -3857,42 +3857,42 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:protocol", IncludeInSchema = false)]
     public enum ItemsChoiceType7
     {
-     
+
         [System.Xml.Serialization.XmlEnumAttribute("urn:oasis:names:tc:SAML:2.0:assertion:AuthnContextClassRef")]
         AuthnContextClassRef,
 
-     
+
         [System.Xml.Serialization.XmlEnumAttribute("urn:oasis:names:tc:SAML:2.0:assertion:AuthnContextDeclRef")]
         AuthnContextDeclRef,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:protocol")]
     public enum AuthnContextComparisonType
     {
 
-     
+
         exact,
 
-     
+
         minimum,
 
-     
+
         maximum,
 
-     
+
         better,
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3903,7 +3903,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private AttributeType[] attributeField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Attribute", Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public AttributeType[] Attribute
         {
@@ -3918,7 +3918,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3933,7 +3933,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string resourceField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Action", Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public ActionType[] Action
         {
@@ -3947,7 +3947,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public EvidenceType Evidence
         {
@@ -3961,7 +3961,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Resource
         {
@@ -3976,7 +3976,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4017,7 +4017,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string providerNameField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public SubjectType Subject
         {
@@ -4031,7 +4031,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public NameIDPolicyType NameIDPolicy
         {
             get
@@ -4044,7 +4044,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public ConditionsType Conditions
         {
@@ -4058,7 +4058,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public RequestedAuthnContextType RequestedAuthnContext
         {
             get
@@ -4071,7 +4071,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public ScopingType Scoping
         {
             get
@@ -4084,7 +4084,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ForceAuthn
         {
@@ -4098,7 +4098,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ForceAuthnSpecified
         {
@@ -4112,7 +4112,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool IsPassive
         {
@@ -4126,7 +4126,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IsPassiveSpecified
         {
@@ -4140,7 +4140,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string ProtocolBinding
         {
@@ -4154,7 +4154,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public ushort AssertionConsumerServiceIndex
         {
@@ -4168,7 +4168,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AssertionConsumerServiceIndexSpecified
         {
@@ -4182,7 +4182,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string AssertionConsumerServiceURL
         {
@@ -4196,7 +4196,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public ushort AttributeConsumingServiceIndex
         {
@@ -4210,7 +4210,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AttributeConsumingServiceIndexSpecified
         {
@@ -4224,7 +4224,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string ProviderName
         {
@@ -4239,7 +4239,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4256,7 +4256,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private bool allowCreateFieldSpecified;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Format
         {
@@ -4270,7 +4270,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string SPNameQualifier
         {
@@ -4284,7 +4284,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AllowCreate
         {
@@ -4298,7 +4298,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AllowCreateSpecified
         {
@@ -4313,7 +4313,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4328,7 +4328,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string proxyCountField;
 
-     
+
         public IDPListType IDPList
         {
             get
@@ -4341,7 +4341,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("RequesterID", DataType = "anyURI")]
         public string[] RequesterID
         {
@@ -4355,7 +4355,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string ProxyCount
         {
@@ -4370,7 +4370,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4383,7 +4383,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string getCompleteField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("IDPEntry")]
         public IDPEntryType[] IDPEntry
         {
@@ -4397,7 +4397,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string GetComplete
         {
@@ -4412,7 +4412,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4427,7 +4427,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string locField;
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string ProviderID
         {
@@ -4441,7 +4441,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
         {
@@ -4455,7 +4455,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Loc
         {
@@ -4470,7 +4470,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4481,7 +4481,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private object[] itemsField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Assertion", typeof(AssertionType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("EncryptedAssertion", typeof(EncryptedElementType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public object[] Items
@@ -4497,7 +4497,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(NameIDMappingResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ArtifactResponseType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ResponseType))]
@@ -4529,7 +4529,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private string consentField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public NameIDType Issuer
         {
@@ -4543,7 +4543,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
         public SignatureType Signature
         {
@@ -4557,7 +4557,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public ExtensionsType Extensions
         {
             get
@@ -4570,7 +4570,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public StatusType Status
         {
             get
@@ -4583,7 +4583,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
         public string ID
         {
@@ -4597,7 +4597,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "NCName")]
         public string InResponseTo
         {
@@ -4611,7 +4611,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Version
         {
@@ -4625,7 +4625,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime IssueInstant
         {
@@ -4639,7 +4639,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Destination
         {
@@ -4653,7 +4653,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Consent
         {
@@ -4679,7 +4679,7 @@ namespace AuthGovPTSaml.Core.SAML
 
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4690,7 +4690,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private string artifactField;
 
-     
+
         public string Artifact
         {
             get
@@ -4704,7 +4704,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4716,7 +4716,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private System.Xml.XmlElement anyField;
 
-     
+
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement Any
         {
@@ -4731,7 +4731,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4744,7 +4744,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private object item1Field;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("EncryptedID", typeof(EncryptedElementType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("NameID", typeof(NameIDType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public object Item
@@ -4759,7 +4759,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("NewEncryptedID", typeof(EncryptedElementType))]
         [System.Xml.Serialization.XmlElementAttribute("NewID", typeof(string))]
         [System.Xml.Serialization.XmlElementAttribute("Terminate", typeof(TerminateType))]
@@ -4776,7 +4776,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4787,7 +4787,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4806,7 +4806,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private bool notOnOrAfterFieldSpecified;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("BaseID", typeof(BaseIDAbstractType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("EncryptedID", typeof(EncryptedElementType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("NameID", typeof(NameIDType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
@@ -4822,7 +4822,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("SessionIndex")]
         public string[] SessionIndex
         {
@@ -4836,7 +4836,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Reason
         {
@@ -4850,7 +4850,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime NotOnOrAfter
         {
@@ -4864,7 +4864,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool NotOnOrAfterSpecified
         {
@@ -4879,7 +4879,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4892,7 +4892,7 @@ namespace AuthGovPTSaml.Core.SAML
 
         private NameIDPolicyType nameIDPolicyField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("BaseID", typeof(BaseIDAbstractType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("EncryptedID", typeof(EncryptedElementType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("NameID", typeof(NameIDType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
@@ -4908,7 +4908,7 @@ namespace AuthGovPTSaml.Core.SAML
             }
         }
 
-     
+
         public NameIDPolicyType NameIDPolicy
         {
             get
@@ -4922,7 +4922,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4933,7 +4933,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private object itemField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("EncryptedID", typeof(EncryptedElementType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         [System.Xml.Serialization.XmlElementAttribute("NameID", typeof(NameIDType), Namespace = "urn:oasis:names:tc:SAML:2.0:assertion")]
         public object Item
@@ -4949,7 +4949,7 @@ namespace AuthGovPTSaml.Core.SAML
         }
     }
 
- 
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4960,7 +4960,7 @@ namespace AuthGovPTSaml.Core.SAML
     {
         private TransformType[] transformField;
 
-     
+
         [System.Xml.Serialization.XmlElementAttribute("Transform")]
         public TransformType[] Transform
         {
